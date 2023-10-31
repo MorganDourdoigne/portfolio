@@ -2,11 +2,12 @@ import styled from "styled-components";
 import { useSelector } from "react-redux";
 import { selectData } from "../pages/homeSlice";
 import { Element } from "react-scroll";
-// Data
+// // Data
 import { moreInfo } from "../data";
 // Components
 import { Col, Container, Row } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";
+import me from "../images/me.png";
 
 const StyledAboutMe = styled.section`
   p {
@@ -19,7 +20,7 @@ const StyledAboutMe = styled.section`
 `;
 
 export default function AboutMe() {
-  const { avatar_url, bio } = useSelector(selectData);
+  const { bio } = useSelector(selectData);
 
   return (
     <Element name={"About"} id="about">
@@ -40,7 +41,7 @@ export default function AboutMe() {
             </Col>
             <Col className="d-none d-md-block text-center">
               <img
-                src={avatar_url}
+                src={me}
                 alt="GitHub Avatar"
                 loading="lazy"
                 className="mx-auto rounded-circle"
