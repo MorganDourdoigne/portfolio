@@ -5,14 +5,17 @@ import { Icon } from "@iconify/react";
 // import newLogo from "./images/yourFileName"
 
 // Projects Images (add your images to the images directory and import below)
-import Logo from "./images/logo.svg";
+import LogoArgentBank from "./images/argentBankLogo.png";
+import LogoNina from "./images/nina.jpg";
+import LogoKasa from "./images/p8.png";
+import LogoBluel from "./images/p6.png";
 
 // Hero Images (add your images to the /images directory with the same names)
-import HeroLight from "./images/hero-light.jpg";
-import HeroDark from "./images/hero-dark.jpg";
+import LightValley from "./images/valley.jpg";
+import DarkWay from "./images/night.jpg";
 // If you change the import names above then you need to change the export names below
-export { HeroLight as Light };
-export { HeroDark as Dark };
+export { LightValley as Light };
+export { DarkWay as Dark };
 
 /* START HERE
  **************************************************************
@@ -87,13 +90,25 @@ export const resume = null;
  ************************************************************** 
   List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
-export const filteredProjects = ["example-1", "example-2", "example-3"];
+export const filteredProjects = ["argent-bank", "Projet-9", "Projet-8", "Projet-6"];
 
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 7-8)
 export const projectCardImages = [
   {
-    name: "example-1",
-    image: Logo,
+    name: "argent-bank",
+    image: LogoArgentBank,
+  },
+  {
+    name: "Projet-9",
+    image: LogoNina,
+  },
+  {
+    name: "Projet-8",
+    image: LogoKasa,
+  },
+  {
+    name: "Projet-6",
+    image: LogoBluel,
   },
 ];
 
