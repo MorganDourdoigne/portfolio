@@ -59,7 +59,7 @@ const StyledHero = styled.header`
     }
   }
 
-  @media screen and (min-width: 1180px) {
+  @media screen and (min-width: 768px) {
     &::before {
       background: ${({ theme }) =>
         theme.name === "light"
