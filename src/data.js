@@ -9,6 +9,9 @@ import LogoArgentBank from "./images/argentBankLogo.png";
 import LogoNina from "./images/nina.jpg";
 import LogoKasa from "./images/p8.png";
 import LogoBluel from "./images/p6.png";
+import LogoPrint from "./images/print.png";
+import LogoFood from "./images/ohmyfood.png";
+import LogoBooki from "./images/booki.png";
 
 // Hero Images (add your images to the /images directory with the same names)
 import LightValley from "./images/valley.jpg";
@@ -90,7 +93,7 @@ export const resume = null;
  ************************************************************** 
   List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
-export const filteredProjects = ["argent-bank", "Projet-9", "Projet-8", "Projet-6"];
+export const filteredProjects = ["argent-bank", "Projet-9", "Projet-8", "Projet-6", "Projet-5", "Projet-4", "Projet_3"];
 
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 7-8)
 export const projectCardImages = [
@@ -109,6 +112,18 @@ export const projectCardImages = [
   {
     name: "Projet-6",
     image: LogoBluel,
+  },
+  {
+    name: "Projet-5",
+    image: LogoPrint,
+  },
+  {
+    name: "Projet-4",
+    image: LogoFood,
+  },
+  {
+    name: "Projet_3",
+    image: LogoBooki,
   },
 ];
 
