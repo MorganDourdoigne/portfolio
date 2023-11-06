@@ -60,7 +60,7 @@ export default function Projects() {
           {error && <h2 className="text-center">{error}</h2>}
           {!error && data.length === 0 && (
             <h2 className="text-center">
-              Oops, you do not have any GitHub projects yet...
+              Oups, vous n'avez pas encore de projets GitHub...
             </h2>
           )}
           {mainProjects.length !== 0 && (
@@ -96,7 +96,7 @@ export default function Projects() {
                         theme === "light" ? "outline-dark" : "outline-light"
                       }
                     >
-                      All <Icon icon="icomoon-free:github" /> Projects
+                      Tous les <Icon icon="icomoon-free:github" /> Projets
                     </Button>
                   </Link>
                 </Container>

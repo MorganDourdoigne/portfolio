@@ -84,7 +84,7 @@ export default function ContactForm() {
             placeholder="someone@something.com"
           />
           <Form.Control.Feedback type="invalid">
-            <h5>Veuillez entre une adresse e-mail valide.</h5>
+            <h5>Veuillez entrer une adresse e-mail valide.</h5>
           </Form.Control.Feedback>
         </Form.Group>
         <Form.Group className="mx-auto mb-3 form-group" controlId="message">

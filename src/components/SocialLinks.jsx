@@ -25,7 +25,7 @@ export default function SocialLinks() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Icon icon="icomoon-free:github" />
+        <Icon icon="icomoon-free:github" />GitHub
       </a>
       {blog && (
         <a href={blog} aria-label="External link" className="link-icons" target="_blank" 

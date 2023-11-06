@@ -121,6 +121,7 @@ export const projectCardImages = [
   {
     name: "Projet-4",
     image: LogoFood,
+    demo: "https://morgandourdoigne.github.io/Projet-4/",
   },
   {
     name: "Projet_3",

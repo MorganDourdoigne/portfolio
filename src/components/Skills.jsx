@@ -1,5 +1,7 @@
 import { useAppContext } from "../appContext";
 import { Element } from "react-scroll";
+import { Link } from 'react-router-dom';
+
 // Data
 import { skillData, resume } from "../data";
 // Components
@@ -14,7 +16,7 @@ export default function Skills() {
       <section className="section">
         <Container className="text-center">
           <Title>
-            <h2>Skills</h2>
+            <h2>Compétences</h2>
             <div className="underline"></div>
           </Title>
           <Row className="mt-3 align-items-center">
@@ -30,16 +32,17 @@ export default function Skills() {
             })}
           </Row>
           {resume && (
-            <a href={resume}>
-              <Button
-                size="lg"
-                variant={theme === "light" ? "outline-dark" : "outline-light"}
-                className="mt-5"
-              >
-                R&eacute;sum&eacute;
-              </Button>
-            </a>
-          )}
+  <Link to={resume}>
+    <Button
+      size="lg"
+      variant={theme === "light" ? "outline-dark" : "outline-light"}
+      className="mt-5"
+    >
+      Résumé
+    </Button>
+  </Link>
+)}
+
         </Container>
       </section>
     </Element>

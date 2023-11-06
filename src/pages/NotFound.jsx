@@ -52,7 +52,7 @@ export default function NotFound() {
           <img src={Logo} alt="React Logo" className="logo-img" />
           <span>4</span>
         </Container>
-        <p className="text-center">Sorry, page not found...</p>
+        <p className="text-center">Désolé, page non trouvée...</p>
       </StyledNotFound>
     </>
   );

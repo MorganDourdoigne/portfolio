@@ -15,7 +15,7 @@ export default function Home() {
 
   React.useEffect(
     function () {
-      document.title = `Morgan Dourdoigne | Portfolio`;
+      document.title = `Morgan Dourdoigne | Développeur web`;
     },
     [name]
   );
