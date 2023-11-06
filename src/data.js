@@ -2,7 +2,7 @@
 import { Icon } from "@iconify/react";
 
 // Navbar Logo image (uncomment below and import your image)
-// import newLogo from "./images/yourFileName"
+import newLogo from "./images/me.png"
 
 // Projects Images (add your images to the images directory and import below)
 import LogoArgentBank from "./images/argentBankLogo.png";
@@ -28,7 +28,7 @@ export { DarkWay as Dark };
 export const githubUsername = "MorganDourdoigne";
 
 // Navbar Logo image
-export const navLogo = undefined;
+export const navLogo = newLogo;
 
 // Blog link icon - https://icon-sets.iconify.design/
 export const Blog = <Icon icon="ph:link-bold" />;
