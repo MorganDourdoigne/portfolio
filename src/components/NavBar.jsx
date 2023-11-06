@@ -81,8 +81,8 @@ export default function NavBar({ Logo }) {
   const { pathname } = useLocation();
   const navLinks = {
     routes: [
-      { id: "1R", name: "Home", route: "/" },
-      { id: "2R", name: "All Projects", route: "/All-Projects" },
+      { id: "1R", name: "Accueil", route: "/" },
+      { id: "2R", name: "Tous les projets", route: "/All-Projects" },
     ],
     to: [
       { id: "1T", name: "Accueil", to: "Home" },
