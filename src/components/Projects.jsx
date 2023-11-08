@@ -9,7 +9,7 @@ import {
 import { Link } from "react-router-dom";
 import { Element } from "react-scroll";
 // Data
-import { filteredProjects } from "../data";
+import { projectCardImages } from "../data";
 // Icons
 import { Icon } from "@iconify/react";
 // Components
@@ -24,23 +24,18 @@ export default function Projects() {
   const error = useSelector(selectError);
   const data = useSelector(selectData);
 
-  React.useEffect(
-    function () {
-      const tempData = [];
-      data.forEach((el, i) => (tempData[i] = Object.create(el)));
-      if (data.length !== 0 && filteredProjects.length !== 0) {
-        const tempArray = tempData.filter((obj) =>
-          filteredProjects.includes(obj.name)
+  React.useEffect(() => {
+    if (data.length !== 0) {
+      const updatedData = data.map((project) => {
+        const matchingProject = projectCardImages.find(
+          (proj) => proj.name === project.name
         );
-        tempArray.length !== 0
-          ? setMainProjects([...tempArray])
-          : setMainProjects([...tempData.slice(0, 3)]);
-      } else {
-        setMainProjects([...tempData.slice(0, 3)]);
-      }
-    },
-    [data]
-  );
+        return matchingProject ? { ...project, ...matchingProject } : project;
+      });
+      setMainProjects(updatedData);
+    }
+  }, [data]);
+  
 
   return (
     <Element name={"Projects"} id="projects">

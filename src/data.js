@@ -101,36 +101,44 @@ export const projectCardImages = [
   {
     name: "argent-bank",
     image: LogoArgentBank,
+    description: "‘Argent-Bank’ est une application web React responsive qui gère l’authentification des utilisateurs et leur profil avec Redux.",
   },
   {
     name: "Projet-9",
     image: LogoNina,
+    description: "Optimisation du site de ‘Nina Carducci’ pour améliorer les performances, le SEO, le référencement local, l’accessibilité et l’intégration des metas pour les réseaux sociaux."
   },
   {
     name: "Projet-8",
     image: LogoKasa,
+    description: "Refonte complète du site ‘Kasa’ en React, développement de l’application, des composants et des routes en suivant les maquettes Figma, tout en améliorant mes compétences en React, React Router et JSON."
   },
   {
     name: "Projet-6",
     image: LogoBluel,
+    description: "Développement de fonctionnalités front-end pour un portfolio, utilisant JavaScript et une API. Ce projet a renforcé mes compétences en JavaScript et en développement front-end."
   },
   {
     name: "Projet-5",
     image: LogoPrint,
+    description: "Le projet ‘Print It’, m’a initié au langage JavaScript, posant les fondamentaux pour le développement de sites web plus complexes."
   },
   {
     name: "Projet-4",
     image: LogoFood,
-    demo: "https://morgandourdoigne.github.io/Projet-4/",
+    description: "Développement d’un site ‘mobile first’ pour des restaurants gastronomiques, renforçant mes compétences en responsive design, animation et organisation CSS."
   },
   {
     name: "Projet_3",
     image: LogoBooki,
+    description: "Intégration de l’interface du site de réservation d’hébergements et d’activités ‘Booki’, en utilisant HTML et CSS."
   },
   {
     name: "Projet-10",
     image: Logo77Events,
+    description: "Finalisation et débogage du site '77events', renforçant mes compétences en tests unitaires et en rédaction de cahier de recette."
   },
+
 ];
 
 /* Contact Info
