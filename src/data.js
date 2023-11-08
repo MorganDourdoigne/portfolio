@@ -38,7 +38,7 @@ export const Blog = <Icon icon="ph:link-bold" />;
   Add a second paragraph for the about me section.
 */
 export const moreInfo =
-  "Je suis un développeur web passionné, fraîchement diplômé d’une formation intensive. J’ai acquis une solide expérience en JavaScript et développé une expertise dans l’utilisation de React et Redux pour créer des applications web interactives et performantes.";
+  "Je suis un développeur web passionné, fraîchement diplômé d’une formation intensive d'intégrateur web chez Openclassrooms. J’ai acquis une solide expérience en JavaScript et développé une expertise dans l’utilisation de React et Redux pour créer des applications web interactives et performantes.";
 
 /* Skills
  ************************************************************** 
