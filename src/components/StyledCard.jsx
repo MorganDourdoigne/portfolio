@@ -16,6 +16,12 @@ const StyledCardComponent = styled.div`
         ? "0 3px 10px rgb(0 0 0 / 0.2)"
         : "0 3px 10px rgb(255 255 255 / 0.2)"};
 
+        .card-img-top {
+          height: 200px;
+          width: 100%;
+          object-fit: fill;
+        }
+
     .card-link {
       text-decoration: none;
       font-size: 1.5rem;
@@ -42,7 +48,8 @@ export default function StyledCard({ image, name, description, url, demo }) {
           variant="top"
           src={image ? image : GH}
           alt={name}
-          className="mx-auto"
+          className="mx-auto card-img-top"
+         
         />
         <Card.Body className="overflow-auto text-center">
           <Card.Title>{name}</Card.Title>
