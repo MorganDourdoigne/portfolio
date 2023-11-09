@@ -13,6 +13,7 @@ import LogoPrint from "./images/print.png";
 import LogoFood from "./images/ohmyfood.png";
 import LogoBooki from "./images/booki.png";
 import Logo77Events from "./images/77events.png";
+import Logoportfolio from "./images/portfolio.png";
 
 // Hero Images (add your images to the /images directory with the same names)
 import LightValley from "./images/valley.jpg";
@@ -94,7 +95,7 @@ export const resume = null;
  ************************************************************** 
   List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
-export const filteredProjects = ["argent-bank", "Projet-9", "Projet-8", "Projet-6", "Projet-5", "Projet-4", "Projet_3", "Projet-10"];
+export const filteredProjects = ["argent-bank", "Projet-9", "Projet-8", "Projet-6", "Projet-5", "Projet-4", "Projet_3", "Projet-10", "portfolio"];
 
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 7-8)
 export const projectCardImages = [
@@ -137,6 +138,11 @@ export const projectCardImages = [
     name: "Projet-10",
     image: Logo77Events,
     description: "Finalisation et débogage du site '77events', renforçant mes compétences en tests unitaires et en rédaction de cahier de recette."
+  },
+  {
+    name: "portfolio",
+    image: Logoportfolio,
+    description: "Code de mon portfolio qui présente les compétences et projets que j'ai développé, construit avec React, Redux et Bootstrap."
   },
 
 ];
