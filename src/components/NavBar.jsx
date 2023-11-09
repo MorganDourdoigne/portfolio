@@ -49,20 +49,25 @@ function ThemeToggle() {
   const { theme, toggleTheme, closeExpanded } = useAppContext();
 
   return (
-    <StyledSwitch onClick={closeExpanded}>
-      <input
-        type="checkbox"
-        aria-label={`Toggle theme, currently ${theme}.`}
-        onClick={toggleTheme}
-      />
-      <div>
-        {theme === "light" ? (
-          <Icon icon="game-icons:sunflower" />
-        ) : (
-          <Icon icon="game-icons:moon" />
-        )}
-      </div>
-    </StyledSwitch>
+<StyledSwitch onClick={closeExpanded}>
+  <input
+    type="checkbox"
+    id="themeToggle"
+    onClick={toggleTheme}
+  />
+  <div>
+    {theme === "light" ? (
+      <Icon icon="game-icons:sunflower" />
+    ) : (
+      <Icon icon="game-icons:moon" />
+    )}
+  </div>
+  <label htmlFor="themeToggle" className="visually-hidden">
+    Toggle theme, currently {theme}.
+  </label>
+</StyledSwitch>
+
+
   );
 }
 // #endregion
@@ -104,7 +109,7 @@ export default function NavBar({ Logo }) {
         bg={theme === "light" ? "light" : "dark"}
         variant={theme === "light" ? "light" : "dark"}
         fixed="top"
-      >
+              >
         <Container>
           <Navbar.Brand>
             <img
