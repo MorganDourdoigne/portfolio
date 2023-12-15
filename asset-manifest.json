@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.63ffa884.css",
+    "main.js": "/portfolio/static/js/main.4ea4f19c.js",
+    "static/media/me.png": "/portfolio/static/media/me.53be28aa8672df3168c4.png",
+    "static/media/nina.jpg": "/portfolio/static/media/nina.e996023f0e99f4c33080.jpg",
+    "static/media/portfolio.png": "/portfolio/static/media/portfolio.bc351b4f0e3e43dd58ac.png",
+    "static/media/ohmyfood.png": "/portfolio/static/media/ohmyfood.80d356714415727bb07a.png",
+    "static/media/valley.jpg": "/portfolio/static/media/valley.680f6ba7e0f6ead814df.jpg",
+    "static/media/print.png": "/portfolio/static/media/print.b9feed5d21c74d6cac4a.png",
+    "static/media/p8.png": "/portfolio/static/media/p8.1ae2d94a081503e8f2a2.png",
+    "static/media/booki.png": "/portfolio/static/media/booki.333a7ea230cfb20bea74.png",
+    "static/media/night.jpg": "/portfolio/static/media/night.1e6c5471fa6ec8ba76f8.jpg",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/media/argentBankLogo.png": "/portfolio/static/media/argentBankLogo.e031a16c76ab9bbbf78a.png",
+    "static/media/GH.svg": "/portfolio/static/media/GH.b9e9a9aa6f05e9dfe5dcb8991bda3e4d.svg",
+    "static/media/defaultNavLogo.svg": "/portfolio/static/media/defaultNavLogo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/portfolio/index.html",
+    "main.63ffa884.css.map": "/portfolio/static/css/main.63ffa884.css.map",
+    "main.4ea4f19c.js.map": "/portfolio/static/js/main.4ea4f19c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.63ffa884.css",
+    "static/js/main.4ea4f19c.js"
+  ]
+}
