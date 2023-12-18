@@ -2,13 +2,15 @@ import { useAppContext } from "../appContext";
 import { Element } from "react-scroll";
 import { Link } from 'react-router-dom';
 
-// Data
+// Importation des données
 import { skillData, resume } from "../data";
 // Components
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";
 
+// Fonction principale "Skills"
 export default function Skills() {
+// Utilisation du hook useAppContext pour accéder au contexte de l'application
   const { theme } = useAppContext();
 
   return (

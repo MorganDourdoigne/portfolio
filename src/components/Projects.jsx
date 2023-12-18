@@ -17,13 +17,17 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import { Title, Loading } from "./globalStyledComponents";
 import StyledCard from "./StyledCard";
 
+// Fonction principale "Projects"
 export default function Projects() {
+ // Définition des états locaux
   const [mainProjects, setMainProjects] = React.useState([]);
   const { theme } = useAppContext();
+// Utilisation du hook useSelector pour accéder à l'état du store Redux
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
   const data = useSelector(selectData);
 
+// Utilisation du hook useEffect pour mettre à jour les projets principaux lorsque les données changent
   React.useEffect(() => {
     if (data.length !== 0) {
       const updatedData = data.map((project) => {

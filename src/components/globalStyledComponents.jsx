@@ -4,7 +4,7 @@ import { Link } from "react-scroll/modules";
 // Icons
 import { Icon } from "@iconify/react";
 
-// Animations
+// Définition des animations
 export const Spin = keyframes`
   from {
     transform: rotate(0deg);
@@ -20,7 +20,7 @@ const spinner = keyframes`
     }
 `;
 
-// Loading Spinner
+// Définition du style pour le spinner de chargement
 export const Loading = styled.div`
   display: inline-block;
   width: 5rem;
@@ -32,7 +32,7 @@ export const Loading = styled.div`
   animation: ${spinner} 0.6s linear infinite;
 `;
 
-// Titles
+// Définition du style pour les titres
 export const Title = styled.div`
   display: inline-block;
   margin: 0 auto;
@@ -53,7 +53,7 @@ export const Title = styled.div`
   }
 `;
 
-// Back to top link
+// Définition du style pour le lien "Retour en haut"
 const StyledDiv = styled.div`
   position: fixed;
   bottom: calc(var(--min-footer-height) + 1.5rem);
@@ -69,6 +69,7 @@ const StyledDiv = styled.div`
   }
 `;
 
+// Fonction principale "BackToTop"
 export function BackToTop({ home }) {
   const [scrollY, setScrollY] = React.useState("");
   const up = React.useRef(null);
@@ -92,6 +93,7 @@ export function BackToTop({ home }) {
     [scrollY]
   );
 
+  // Rendu du composant
   return (
     <StyledDiv ref={up}>
       <Link to={home} className="link-icons">

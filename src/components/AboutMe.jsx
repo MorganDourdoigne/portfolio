@@ -1,14 +1,18 @@
+// Importation des bibliothèques nécessaires
 import styled from "styled-components";
 import { useSelector } from "react-redux";
 import { selectData } from "../pages/homeSlice";
 import { Element } from "react-scroll";
-// // Data
+
+// Importation des données
 import { moreInfo } from "../data";
-// Components
+
+// Importation des composants
 import { Col, Container, Row } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";
 import me from "../images/me.png";
 
+// Définition du style pour la section "À propos de moi"
 const StyledAboutMe = styled.section`
   p {
     font-size: 1.25rem;
@@ -19,9 +23,12 @@ const StyledAboutMe = styled.section`
   }
 `;
 
+// Fonction principale "AboutMe"
 export default function AboutMe() {
+// Utilisation du hook useSelector pour accéder à la donnée "bio" dans le store Redux
   const { bio } = useSelector(selectData);
 
+// Rendu du composant
   return (
     <Element name={"About"} id="about">
       <StyledAboutMe className="section">

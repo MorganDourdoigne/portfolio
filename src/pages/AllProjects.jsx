@@ -40,16 +40,20 @@ const StyledSection = styled.section`
   }
 `;
 
+// Fonction principale "AllProjects"
 export default function AllProjects() {
+// Définition des états locaux
   const [searchInput, setSearchInput] = React.useState("");
   const [filteredResults, setFilteredResults] = React.useState([]);
   const [pageItems, setPageItems] = React.useState([]);
   const [activePage, setActivePage] = React.useState(1);
+// Utilisation du hook useSelector pour accéder à l'état du store Redux
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
   const data = useSelector(selectData);
   const { name } = useSelector(homeData);
 
+// Utilisation du hook useEffect pour mettre à jour le titre du document
   React.useEffect(
     function () {
       document.title = `${name} | All Projects`;
@@ -57,6 +61,7 @@ export default function AllProjects() {
     [name]
   );
 
+// Utilisation du hook useEffect pour filtrer les résultats et mettre à jour les éléments de la page
   React.useEffect(
     function () {
       if (searchInput !== "") {

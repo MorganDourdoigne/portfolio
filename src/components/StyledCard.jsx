@@ -2,11 +2,12 @@ import React from "react";
 import styled from "styled-components";
 // Icons
 import { Icon } from "@iconify/react";
-// Media
+// Importation des médias
 import GH from "../images/GH.svg";
 // Components
 import { Card } from "react-bootstrap";
 
+// Définition du style pour le composant de carte
 const StyledCardComponent = styled.div`
   .card {
     color: ${({ theme }) => theme.color};
@@ -39,6 +40,7 @@ const StyledCardComponent = styled.div`
   }
 `;
 
+// Fonction principale "StyledCard"
 export default function StyledCard({ image, name, description, url, demo }) {
   return (
     

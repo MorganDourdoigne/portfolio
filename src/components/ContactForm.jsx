@@ -1,18 +1,23 @@
 import React from "react";
 import { useAppContext } from "../appContext";
-// Data
+
+// Importation des données
 import { formspreeUrl } from "../data";
 // Components
 import { Alert, Button, Form, Spinner } from "react-bootstrap";
 
+// Fonction principale "ContactForm"
 export default function ContactForm() {
+// Définition des états locaux
   const [isValidated, setIsValidated] = React.useState(false);
   const [isProcessing, setIsProcessing] = React.useState(false);
   const [success, setSuccess] = React.useState(false);
   const [danger, setDanger] = React.useState(false);
   const [dangerMessage, setDangerMessage] = React.useState(null);
+// Utilisation du contexte de l'application pour accéder au thème
   const { theme } = useAppContext();
 
+// Fonction pour envoyer les données du formulaire
   async function postData(data) {
     const response = await fetch(formspreeUrl, {
       method: "POST",
@@ -25,6 +30,7 @@ export default function ContactForm() {
     return response;
   }
 
+// Gestionnaire d'événements pour la soumission du formulaire
   async function handleSubmit(event) {
     const form = event.currentTarget;
     setSuccess(false);
@@ -66,6 +72,7 @@ export default function ContactForm() {
     }
   }
 
+// Rendu du composant
   return (
     <>
       <Form noValidate validated={isValidated} onSubmit={handleSubmit}>

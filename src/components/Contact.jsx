@@ -6,12 +6,15 @@ import { Container } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";
 import ContactForm from "./ContactForm";
 
+// Définition du style pour la section "Contact"
 const StyledSection = styled.section`
   min-height: 89vh;
   padding-top: var(--nav-height);
 `;
 
+// Fonction principale "Contact"
 export default function Contact() {
+// Rendu du composant
   return (
     <Element name={"Contact"} id="contact">
       <StyledSection className="d-flex flex-column justify-content-center">

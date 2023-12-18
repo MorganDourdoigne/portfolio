@@ -12,6 +12,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { Spin } from "./globalStyledComponents";
 import SocialLinks from "./SocialLinks";
 
+// Définition du style pour le composant Hero
 const StyledHero = styled.header`
   position: relative;
   display: grid;
@@ -80,9 +81,10 @@ const StyledHero = styled.header`
   }
 `;
 
+// Fonction principale "Hero"
 export default function Hero() {
   // const { name } = useSelector(selectData);
-
+  // Rendu du composant
   return (
     <StyledHero>
       <Container>

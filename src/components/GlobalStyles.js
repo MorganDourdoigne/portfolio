@@ -1,5 +1,7 @@
+// Importation de la fonction createGlobalStyle de styled-components
 import { createGlobalStyle } from "styled-components";
 
+// Création d'un composant de style global
 const GlobalStyles = createGlobalStyle`
 /*
 =============== 

@@ -11,7 +11,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 // Images
 import Logo from "./defaultNavLogo.svg";
 
-// #region styled-components
+// Définition du style pour le switch de thème
 const StyledSwitch = styled.label`
   /* Slider pill */
   display: flex;
@@ -28,7 +28,7 @@ const StyledSwitch = styled.label`
     opacity: 0;
   }
 
-  /* Move span when checked */
+  /*Styles pour cacher la case à cocher par défaut*/
   input[type="checkbox"]:checked + div {
     transform: translateX(100%);
   }
@@ -41,13 +41,16 @@ const StyledSwitch = styled.label`
   }
 `;
 
+// Définition du style pour l'espaceur de navigation fixe
 const FixedNavSpacer = styled.div`
   height: var(--nav-height);
 `;
 
+// Fonction pour basculer le thème
 function ThemeToggle() {
   const { theme, toggleTheme, closeExpanded } = useAppContext();
 
+// Rendu du composant
   return (
 <StyledSwitch onClick={closeExpanded}>
   <input
@@ -81,6 +84,7 @@ const defaultProps = {
   Logo: Logo,
 };
 
+// Fonction principale "NavBar"
 export default function NavBar({ Logo }) {
   const { theme, isExpanded, closeExpanded, toggleExpanded } = useAppContext();
   const { pathname } = useLocation();
