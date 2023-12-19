@@ -2,14 +2,17 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 // Data
 import { githubUsername, projectCardImages } from "../data";
 
+// Initialisation de l'état
 const initialState = {
   error: "",
   isLoading: true,
   data: [],
 };
 
+// URL de l'API GitHub pour récupérer les dépôts
 export const url = `https://api.github.com/users/${githubUsername}/repos?per_page=100`;
 
+// Création d'une action asynchrone pour récupérer les dépôts GitHub
 export const fetchGitHubReops = createAsyncThunk(
   "allProjects/fetchGitHubReops",
   async (thunkApi, { rejectWithValue }) => {
@@ -30,6 +33,7 @@ export const fetchGitHubReops = createAsyncThunk(
   }
 );
 
+// Création d'un slice Redux pour gérer l'état des projets
 export const allProjectsSlice = createSlice({
   name: "allProjects",
   initialState,
@@ -59,6 +63,7 @@ export const allProjectsSlice = createSlice({
   },
 });
 
+// Sélecteurs pour accéder à l'état
 export const selectIsLoading = (state) => state.allProjects.isLoading;
 export const selectError = (state) => state.allProjects.error;
 export const selectData = (state) => state.allProjects.data;

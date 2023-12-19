@@ -1,18 +1,20 @@
+// Importation des bibliothèques nécessaires
 import React from "react";
 import ReactDOM from "react-dom/client";
-// https://reactjs.org/docs/context.html
+
 import { AppProvider } from "./appContext";
-// https://redux.js.org/tutorials/fundamentals/part-5-ui-react#passing-the-store-with-provider
+
 import { Provider } from "react-redux";
 import { store } from "./store";
-// https://create-react-app.dev/docs/adding-bootstrap
+
 import "bootstrap/dist/css/bootstrap.css";
 import App from "./App";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 
-// https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html
+// Création d'une racine pour le rendu
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
+// Rendu de l'application dans la racine
 root.render(
   <Provider store={store}>
     <AppProvider>
@@ -21,7 +23,5 @@ root.render(
   </Provider>
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://cra.link/PWA
+// Enregistrement du service worker pour permettre à l'application de fonctionner hors ligne et de se charger plus rapidement
 serviceWorkerRegistration.register();

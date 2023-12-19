@@ -1,3 +1,4 @@
+// Importation des modules nécessaires
 import React from "react";
 import { useAppContext } from "./appContext";
 import { useDispatch, useSelector } from "react-redux";
@@ -23,7 +24,9 @@ import Home from "./pages/Home";
 import AllProjects from "./pages/AllProjects";
 import NotFound from "./pages/NotFound";
 
+// Détection du mode sombre
 const darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+// Définition des thèmes
 const themes = {
   light: {
     name: "light",
@@ -37,12 +40,15 @@ const themes = {
   },
 };
 
+// Fonction principale de l'application
 export default function App() {
+// Utilisation du contexte de l'application et du Redux
   const { theme, setTheme } = useAppContext();
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
   const dispatch = useDispatch();
 
+// Mise à jour du thème et récupération des informations GitHub au chargement de l'application
   React.useEffect(
     function () {
       const updateTheme = () =>
@@ -54,12 +60,14 @@ export default function App() {
     [setTheme, dispatch]
   );
 
+// Changement du thème en fonction des préférences de l'utilisateur
   window
     .matchMedia("(prefers-color-scheme: dark)")
     .addEventListener("change", (e) =>
       e.matches ? setTheme("dark") : setTheme("light")
     );
 
+// Affichage en fonction de l'état de chargement et des erreurs
   if (isLoading) {
     return (
       <ThemeProvider theme={themes[theme]}>

@@ -1,10 +1,10 @@
-// Skills icons - https://icon-sets.iconify.design/
+// Importation des bibliothèques nécessaires
 import { Icon } from "@iconify/react";
 
-// Navbar Logo image (uncomment below and import your image)
+// Navbar Logo image Bibliothèque d'icônes
 import newLogo from "./images/me.png"
 
-// Projects Images (add your images to the images directory and import below)
+// Importation des images pour le logo de la barre de navigation et les projets
 import LogoArgentBank from "./images/argentBankLogo.png";
 import LogoNina from "./images/nina.jpg";
 import LogoKasa from "./images/p8.png";
@@ -15,36 +15,30 @@ import LogoBooki from "./images/booki.png";
 import Logo77Events from "./images/77events.png";
 import Logoportfolio from "./images/portfolio.png";
 
-// Hero Images (add your images to the /images directory with the same names)
+// Importation des images pour les sections claires et sombres du site
 import LightValley from "./images/valley.jpg";
 import DarkWay from "./images/night.jpg";
-// If you change the import names above then you need to change the export names below
+// Exportation des images pour les sections claires et sombres
 export { LightValley as Light };
 export { DarkWay as Dark };
 
-/* START HERE
- **************************************************************
-  Add your GitHub username (string - "YourUsername") below.
-*/
+
+// Définition du nom d'utilisateur GitHub
 export const githubUsername = "MorganDourdoigne";
 
-// Navbar Logo image
+// Exportation du logo de la barre de navigation
 export const navLogo = newLogo;
 
-// Blog link icon - https://icon-sets.iconify.design/
+// Définition de l'icône du lien vers le blog
 export const Blog = <Icon icon="ph:link-bold" />;
 
-/* About Me
- **************************************************************
-  Add a second paragraph for the about me section.
-*/
+
+// Définition des informations supplémentaires sur vous
 export const moreInfo =
   "Je suis un développeur web passionné, fraîchement diplômé d’une formation intensive d'intégrateur web chez Openclassrooms. J’ai acquis une solide expérience en JavaScript et développé une expertise dans l’utilisation de React et Redux pour créer des applications web interactives et performantes.";
 
-/* Skills
- ************************************************************** 
-  Add or remove skills in the SAME format below, choose icons here - https://icon-sets.iconify.design/
-*/
+
+// Définition des compétences
 export const skillData = [
   {
     id: 1,
@@ -88,16 +82,13 @@ export const skillData = [
   },
 ];
 
-// Resume link (string - "https://YourResumeUrl") - I am using CloudFront to share my resume (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
+// Définition du lien vers le CV
 export const resume = null;
 
-/* Projects
- ************************************************************** 
-  List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
-*/
+// Définition des projets à inclure
 export const filteredProjects = ["argent-bank", "Projet-9", "Projet-8", "Projet-6", "Projet-5", "Projet-4", "Projet_3", "Projet-10", "portfolio"];
 
-// Replace the defualt GitHub image for matching repos below (images imported above - lines 7-8)
+// Remplacement de l'image par défaut de GitHub pour les dépôts correspondants
 export const projectCardImages = [
   {
     name: "argent-bank",

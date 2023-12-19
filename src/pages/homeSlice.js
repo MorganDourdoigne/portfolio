@@ -2,14 +2,17 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 // Data
 import { githubUsername } from "../data";
 
+// Initialisation de l'état
 const initialState = {
   isLoading: true,
   error: "",
   data: [],
 };
 
+// URL de l'API GitHub
 export const url = `https://api.github.com/users/${githubUsername}`;
 
+// Création d'une action asynchrone pour récupérer les informations GitHub
 export const fetchGitHubInfo = createAsyncThunk(
   "home/fetchGitHubInfo",
   async (thunkApi, { rejectWithValue }) => {
@@ -30,6 +33,7 @@ export const fetchGitHubInfo = createAsyncThunk(
   }
 );
 
+// Création du slice Redux pour la page d'accueil
 export const homeSlice = createSlice({
   name: "home",
   initialState,
@@ -51,8 +55,10 @@ export const homeSlice = createSlice({
   },
 });
 
+// Sélecteurs pour accéder à l'état
 export const selectIsLoading = (state) => state.home.isLoading;
 export const selectError = (state) => state.home.error;
 export const selectData = (state) => state.home.data;
 
+// Exportation du reducer
 export default homeSlice.reducer;
